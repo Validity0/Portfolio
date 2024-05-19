@@ -1,0 +1,7 @@
+body {
+    font-size: large;
+    color: red;
+}
+#box {
+    border: 2px red
+}
