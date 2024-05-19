@@ -1,7 +1,186 @@
-body {
+#Title {
     font-size: large;
-    color: red;
+    color: black;
+    margin-left: 50px;
 }
-#box {
-    border: 2px red
+.calculator {
+    
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: top;
+    font-family: Arial, sans-serif;
+}
+#text-box {
+    
+    width: 195px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: right;
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+}
+
+.button7 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: -15px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.button8 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.button9 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.buttonX {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.button4 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: -15px;
+    margin-top: -75px;
+    vertical-align: top;
+}
+.button5 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -75px;
+    vertical-align: top;
+}
+.button6 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -75px;
+    vertical-align: top;
+}
+.button- {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -75px;
+    vertical-align: top;
+}
+.button1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: -15px;
+    margin-top: -170px;
+    vertical-align: top;
+}
+.button2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -170px;
+    vertical-align: top;
+}
+.button3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -170px;
+    vertical-align: top;
+}
+.buttonPlus {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -170px;
+    vertical-align: top;
+}
+.buttonC {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: -15px;
+    margin-top: -270px;
+    vertical-align: top;
+}
+.button0 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -270px;
+    vertical-align: top;
+}
+.buttonEquals {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -270px;
+    vertical-align: top;
+}
+.buttonDevide {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 0px;
+    margin-top: -270px;
+    vertical-align: top;
 }
