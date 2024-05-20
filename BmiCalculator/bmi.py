@@ -3,10 +3,10 @@ while weight.isdecimal() == False:
     print("Please write a number")
     weight = input("What is your Weight in LB?")
 
-height = input("What is your Hight in feet?")
+height = input("What is your Height in feet?")
 while height.isdecimal() == False:
     print("Please write a number")
-    height = input("What is your Hight in feet?")
+    height = input("What is your Height in feet?")
 
 weight = float(weight)
 height = float(height)
