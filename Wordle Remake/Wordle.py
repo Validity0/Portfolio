@@ -17,12 +17,36 @@ five_letter_words = [
     "yacht", "zephy"
 ]
 
-correctWord = "mango"
-guess = input("Guess: ")
-for letter in range(len(correctWord)):
-    if guess[letter] == correctWord[letter]:
-        print(guess[letter].upper(), end="")
-    elif guess[letter] in correctWord:
-        print(guess[letter].lower(), end="")
+array = ["-","-","-","-","-"]
+holdGuess = []
+count = 0
+correctWord = random.choice(five_letter_words)
+print("Wordle\nUppercase = Letter is in the right spot in the word\nLowercase = Letter is in the word but not the right spot\nHyphen = Letter is not in word\nType 'stop' to quit\nYou have 5 tries")
+while count < 5:
+    guess = input("Guess: ")
+    print(" ")
+    if len(guess) == 5 and guess != correctWord:
+        count = count+1
+        for letter in range(len(correctWord)):
+            if guess[letter] == correctWord[letter]:
+                array[letter] = guess[letter].upper()
+            elif guess[letter] in correctWord:
+                array[letter] = guess[letter].lower()
+            else:
+                array[letter] = "-"
+        holdGuess.append(''.join(array))
+        for i in range(len(holdGuess)):
+            print(holdGuess[i])
+    elif guess == "stop" or guess == "Stop" or guess == "STOP":
+        exit()
+    elif guess == correctWord:
+        holdGuess.append(correctWord.upper())
+        for i in range(len(holdGuess)):
+            print(holdGuess[i])
+        print("Congrats! You Win!")
+        exit()
     else:
-        print("-", end="")
+        print("Please write a 5 letter word")
+if count == 5:
+    print("Sorry, you lose :(")
+    print("The correct word was " + "'" + correctWord + "'")
