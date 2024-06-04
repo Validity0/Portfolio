@@ -14,7 +14,7 @@ five_letter_words = [
     "ivory", "jumpy", "kinky", "latch", "mirth",
     "nerdy", "opine", "prism", "quake", "resin",
     "scout", "trove", "ultra", "venom", "wrath",
-    "yacht", "zephy"
+    "yacht", "zephy", "slave"
 ]
 
 array = ["-","-","-","-","-"]
