@@ -1,4 +1,5 @@
 import random
+import string
 five_letter_words = [
     "apple", "brave", "crisp", "drama", "eagle",
     "flame", "grape", "harsh", "ideal", "jolly",
@@ -17,6 +18,7 @@ five_letter_words = [
     "yacht", "zephy", "slave"
 ]
 
+alphabet = string.ascii_lowercase
 array = ["-","-","-","-","-"]
 holdGuess = []
 count = 0
@@ -26,7 +28,7 @@ while count < 5:
     guess = input("Guess: ")
     print(" ")
     if len(guess) == 5 and guess != correctWord:
-        count = count+1
+        count += 1
         for letter in range(len(correctWord)):
             if guess[letter] == correctWord[letter]:
                 array[letter] = guess[letter].upper()
@@ -34,7 +36,9 @@ while count < 5:
                 array[letter] = guess[letter].lower()
             else:
                 array[letter] = "-"
+                alphabet = alphabet.replace(guess[letter], ' ')
         holdGuess.append(''.join(array))
+        print("Letters left = " + alphabet)
         for i in range(len(holdGuess)):
             print(holdGuess[i])
     elif guess == "stop" or guess == "Stop" or guess == "STOP":
